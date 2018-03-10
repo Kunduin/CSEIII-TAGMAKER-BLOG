@@ -1,0 +1,16 @@
+.avatar{
+    width:110px;
+    height: 100px;
+    border-radius: 50px;
+    border-left:6px solid #6b7ae061;
+    border-right: 6px solid #6b7ae061;
+    transition: all 0.25s ease-out;
+    padding: 10px 9px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.avatar:hover{
+    border-left:6px solid #1890ff;
+    border-right: 6px solid #1890ff;
+}

@@ -1,0 +1,18 @@
+.blog-card{
+    -webkit-transition: all 0.4s;
+    transition: all 0.6s;
+    border-radius: 10px;
+    padding: 30px;
+    border-bottom: 1px solid #0000001c;
+    box-sizing: content-box;
+}
+
+.blog-card:hover{
+    -webkit-transform: translateY(-4px);
+            transform: translateY(-4px);
+    /* -webkit-box-shadow: 0 5px 30px #0000001c;
+            box-shadow: 0 5px 30px #0000001c; */
+            padding:30px 30px 26px;
+    border-bottom: 5px solid black;
+            
+}
