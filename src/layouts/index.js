@@ -8,7 +8,7 @@ const { Header, Content, Footer } = Layout;
 import HeaderNav from '../components/HeaderNav'
 
 
-export default ({ children, data }) => (
+export default ({ children, data, location }) => (
   <Layout className="layout">
 
     <Content style={{ padding: "0 50px", marginTop: 64, marginRight: 0 }}>
@@ -18,7 +18,7 @@ export default ({ children, data }) => (
       <BackTop />
     </Content>
     <Header style={{ position: "fixed", width: "100%" }}>
-      <HeaderNav>
+      <HeaderNav location={location}>
         {data.site.siteMetadata.title}
       </HeaderNav>
     </Header>

@@ -19,7 +19,7 @@
     "gatsby-plugin-nprogress": "^1.0.13",
     "gatsby-plugin-react-helmet": "^2.0.6",
     "gatsby-plugin-react-next": "^1.0.10",
-    "gatsby-plugin-sharp": "^1.6.39",
+    "gatsby-plugin-sharp": "^1.6.41",
     "gatsby-remark-autolink-headers": "^1.4.13",
     "gatsby-remark-copy-linked-files": "^1.5.30",
     "gatsby-remark-images": "^1.5.56",
@@ -28,6 +28,7 @@
     "gatsby-source-filesystem": "^1.5.26",
     "gatsby-transformer-remark": "^1.7.36",
     "gatsby-transformer-yaml": "^1.5.16",
+    "react-anime": "^2.1.0",
     "react-helmet": "^5.2.0"
   }
 }

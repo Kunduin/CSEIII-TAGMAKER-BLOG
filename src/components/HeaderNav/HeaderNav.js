@@ -4,7 +4,7 @@ import Link from "gatsby-link";
 
 class HeaderNav extends React.Component {
   state = {
-    current: "Home"
+    current: ""
   };
 
   url = {
@@ -13,23 +13,28 @@ class HeaderNav extends React.Component {
   };
 
   componentDidMount = () => {
-    this.setKeyValue();
+    this.setKeyValue(this.props);
   };
 
-  setKeyValue = () => {
-    if (location.pathname.includes("/" + this.url.Blog)) {
+  componentWillReceiveProps = (nextProps) =>{
+    this.setKeyValue(nextProps);
+    console.log("click~~"+nextProps.location.pathname);
+  }
+
+  setKeyValue = (newProps) => {
+    if (newProps.location.pathname.includes("/" + this.url.Blog)) {
       this.setState({ current: this.url.Blog });
-    } else if (location.pathname.includes("/" + this.url.Docs)) {
+    } else if (newProps.location.pathname.includes("/" + this.url.Docs)) {
       this.setState({ current: this.url.Docs });
     } else {
-      this.setState({ current: null });
+      this.setState({ current: "" });
     }
   };
 
   render() {
     const children = this.props.children;
     return (
-      <div style={{width:"100%"}}  onClick={this.setKeyValue}>
+      <div style={{width:"100%"}}>
         <Link to={`/`}>
           <div
             style={{

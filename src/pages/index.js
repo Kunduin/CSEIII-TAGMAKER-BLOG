@@ -1,3 +1,9 @@
-import React from "react"
+import React from "react";
+import Logo from "../components/Logo";
 
-export default () => <div>Hello world!</div>
+export default () => (
+  <div>
+    Hello world!
+    <Logo />
+  </div>
+);
