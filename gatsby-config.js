@@ -65,7 +65,9 @@ module.exports = {
         theme: {
           "avatar-size-base": `40px`,
           "avatar-size-lg": "80px",
-          "layout-body-background": `rgba(241, 242, 255, 0.05098039)`
+          "layout-body-background": `rgba(241, 242, 255, 0.05098039)`,
+          "menu-bg":"rgb(244, 245, 247)",
+          "menu-item-active-bg":"transparent"
         }
       }
     }

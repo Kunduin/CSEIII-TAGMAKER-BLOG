@@ -11,8 +11,8 @@ import HeaderNav from '../components/HeaderNav'
 export default ({ children, data, location }) => (
   <Layout className="layout">
 
-    <Content style={{ padding: "0 50px", marginTop: 64, marginRight: 0 }}>
-      <div style={{ padding: 24, minHeight: 280 }}>
+    <Content style={{ marginTop: 64, marginRight: 0 }}>
+      <div style={{ minHeight: 280 }}>
         {children()}
       </div>
       <BackTop />
