@@ -1,0 +1,10 @@
+{
+  "groups": {
+    "default": {
+      "packages": [
+        "package.json",
+        "plugins/gatsby-transformer-authors-yaml/package.json"
+      ]
+    }
+  }
+}
